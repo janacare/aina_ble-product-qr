@@ -3,130 +3,210 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aina</title>
+  <title>Welcome to Aina – Jana Care</title>
 
-  <meta name="description" content="Aina Creatinine monitoring app download page" />
+  <meta name="description" content="Welcome to Aina by Jana Care. Download the mobile app and get started with at-home testing." />
 
   <style>
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #f4f6f8;
+      background: #ffffff;
       color: #1f2937;
     }
+
     .container {
       max-width: 420px;
       margin: 0 auto;
-      padding: 24px 16px 40px;
+      padding: 20px 16px 40px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #2563eb;
+      margin-bottom: 24px;
+    }
+
+    .hero {
       text-align: center;
+      margin-bottom: 20px;
     }
-    .card {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 24px 20px 28px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    }
-    .logo {
-      width: 96px;
+
+    .hero-icon {
+      width: 64px;
       height: 96px;
       margin: 0 auto 12px;
-      border-radius: 16px;
-      background: #e5e7eb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: #6b7280;
+      background: #7dd3fc;
+      border-radius: 32px;
+      position: relative;
     }
+
+    .hero-icon::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
     h1 {
       font-size: 1.5rem;
-      margin: 12px 0 8px;
+      margin: 8px 0;
+      color: #2563eb;
     }
-    p {
-      font-size: 0.95rem;
-      line-height: 1.5;
-      color: #4b5563;
-      margin: 0 0 20px;
+
+    .intro {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #374151;
+      margin-bottom: 28px;
     }
-    .download-section {
-      margin-top: 20px;
-    }
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 14px 16px;
-      margin: 12px 0;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 1rem;
+
+    .section-title {
+      text-align: center;
       font-weight: 600;
-      color: #ffffff;
+      color: #2563eb;
+      margin-bottom: 16px;
     }
-    .btn.android {
-      background: #34a853;
+
+    .step {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
     }
-    .btn.ios {
-      background: #000000;
+
+    .step-title {
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
     }
-    .hint {
+
+    .step-desc {
+      font-size: 0.85rem;
+      color: #4b5563;
+    }
+
+    .download-box {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .store-buttons a {
+      display: inline-block;
+      margin: 10px 6px 0;
+    }
+
+    .store-buttons img {
+      height: 40px;
+    }
+
+    .ready {
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    .ready h2 {
+      font-size: 1.2rem;
+      color: #2563eb;
+      margin-bottom: 8px;
+    }
+
+    .ready p {
+      font-size: 0.85rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 32px;
       font-size: 0.75rem;
       color: #6b7280;
-      margin-top: 16px;
-    }
-    footer {
-      margin-top: 24px;
-      font-size: 0.7rem;
-      color: #9ca3af;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="card">
+<div class="container">
 
-      <div class="logo">LOGO</div>
+  <div class="brand">
+    🩺 Jana Care
+  </div>
 
-      <h1>Aina</h1>
-      <p>
-        Creatinine monitoring device designed to work seamlessly with the Aina BLE mobile application.
-      </p>
+  <div class="hero">
+    <div class="hero-icon"></div>
+    <h1>Welcome to Aina</h1>
+  </div>
 
-      <div class="download-section">
-        <a id="androidBtn" class="btn android" href="https://play.google.com/store/apps/details?id=YOUR_APP_ID">
-          Download on Google Play
-        </a>
+  <div class="intro">
+    Easily manage your health with simple, reliable at-home testing.
+    <br><br>
+    Follow this guide for a simple overview to help you get started.
+    Before performing a test, please ensure to read the
+    <strong>Instructions for Use (IFU)</strong> provided in both the device
+    and test kits for step-by-step instructions essential for proper
+    testing and accurate results.
+  </div>
 
-        <a id="iosBtn" class="btn ios" href="https://apps.apple.com/app/idYOUR_APP_ID">
-          Download on App Store
-        </a>
-      </div>
+  <div class="section-title">Get Started!</div>
 
-      <div class="hint">
-        The correct app store is highlighted automatically based on your device.
-      </div>
-
-      <footer>
-        © 2026 Jana Care. All rights reserved.
-      </footer>
+  <div class="step">
+    <div class="step-title">1️⃣ Unbox your Kit</div>
+    <div class="step-desc">
+      Ensure all components are present as shown in the kit contents.
     </div>
   </div>
 
-  <script>
-    (function () {
-      const ua = navigator.userAgent || navigator.vendor || window.opera;
-      const androidBtn = document.getElementById('androidBtn');
-      const iosBtn = document.getElementById('iosBtn');
+  <div class="step">
+    <div class="step-title">2️⃣ Insert batteries</div>
+    <div class="step-desc">
+      Insert two AAA batteries into the device as indicated.
+    </div>
+  </div>
 
-      if (/android/i.test(ua)) {
-        androidBtn.style.boxShadow = '0 0 0 3px rgba(52,168,83,0.4)';
-      } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-        iosBtn.style.boxShadow = '0 0 0 3px rgba(0,0,0,0.4)';
-      }
-    })();
-  </script>
+  <div class="step">
+    <div class="step-title">3️⃣ Download the Mobile App</div>
+    <div class="download-box">
+      Click below to download
+      <div class="store-buttons">
+        <a href="https://apps.apple.com/app/idYOUR_APP_ID">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID">
+          <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Google Play">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ready">
+    <h2>You’re Ready to Begin Testing!</h2>
+    <p>
+      Open the mobile application and follow the instructions to set up
+      your account, pair your device and perform the test.
+      <br><br>
+      For detailed testing and safety instructions, refer to the IFU
+      included in your kit.
+    </p>
+  </div>
+
+  <footer>
+    <strong>Jana Care</strong><br>
+    Need help? Please contact support.
+  </footer>
+
+</div>
 
 </body>
 </html>
