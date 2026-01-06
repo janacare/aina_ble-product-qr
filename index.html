@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aina</title>
+
+  <meta name="description" content="Aina Creatinine monitoring app download page" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+      text-align: center;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px 20px 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+    .logo {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 12px;
+      border-radius: 16px;
+      background: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #6b7280;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin: 12px 0 8px;
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #4b5563;
+      margin: 0 0 20px;
+    }
+    .download-section {
+      margin-top: 20px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 16px;
+      margin: 12px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    .btn.android {
+      background: #34a853;
+    }
+    .btn.ios {
+      background: #000000;
+    }
+    .hint {
+      font-size: 0.75rem;
+      color: #6b7280;
+      margin-top: 16px;
+    }
+    footer {
+      margin-top: 24px;
+      font-size: 0.7rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <div class="logo">LOGO</div>
+
+      <h1>Aina</h1>
+      <p>
+        Creatinine monitoring device designed to work seamlessly with the Aina BLE mobile application.
+      </p>
+
+      <div class="download-section">
+        <a id="androidBtn" class="btn android" href="https://play.google.com/store/apps/details?id=YOUR_APP_ID">
+          Download on Google Play
+        </a>
+
+        <a id="iosBtn" class="btn ios" href="https://apps.apple.com/app/idYOUR_APP_ID">
+          Download on App Store
+        </a>
+      </div>
+
+      <div class="hint">
+        The correct app store is highlighted automatically based on your device.
+      </div>
+
+      <footer>
+        © 2026 Jana Care. All rights reserved.
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+      const androidBtn = document.getElementById('androidBtn');
+      const iosBtn = document.getElementById('iosBtn');
+
+      if (/android/i.test(ua)) {
+        androidBtn.style.boxShadow = '0 0 0 3px rgba(52,168,83,0.4)';
+      } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        iosBtn.style.boxShadow = '0 0 0 3px rgba(0,0,0,0.4)';
+      }
+    })();
+  </script>
+
+</body>
+</html>
