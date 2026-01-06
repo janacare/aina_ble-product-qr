@@ -144,11 +144,52 @@
       line-height: 1.5;
     }
 
-    footer {
+    /* footer {
       margin-top: 32px;
       font-size: 0.75rem;
       color: #6b7280;
+    } */
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.8rem;
+      color: #374151;
     }
+    
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 12px;
+    }
+    
+    .footer-logo {
+      height: 20px;
+      width: auto;
+    }
+    
+    .footer-help {
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    
+    .footer-contact .contact-item {
+      margin-bottom: 6px;
+    }
+    
+    .footer a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
@@ -246,9 +287,33 @@
     </p>
   </div>
 
-  <footer>
+  <!-- <footer>
     <strong> 🩺 Jana Care</strong><br>
     Need help? Please contact support.
+  </footer> -->
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="images/janacare-logo.svg" alt="Jana Care Logo" class="footer-logo">
+      <span>Jana Care</span>
+    </div>
+  
+    <div class="footer-help">
+      <strong>Need Help?</strong>
+    </div>
+  
+    <div class="footer-contact">
+      <div class="contact-item">
+        📧 Email:
+        <a href="mailto:support@janacare.com">support@janacare.com</a>
+      </div>
+      <div class="contact-item">
+        🌐 Visit:
+        <a href="https://www.janacare.com/" target="_blank" rel="noopener">
+          https://www.janacare.com/
+        </a>
+      </div>
+    </div>
   </footer>
 
 </div>
